@@ -3,129 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aegis Ops | AI Content Strategy</title>
+    <title>Aegis Ops & AI Strategy | Wharton, TX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
-        :root { 
-            --navy: #0D1B2A; 
-            --cyan: #00E5FF; 
-            --gold: #B89E6B; 
-            --white: #FFFFFF; 
+        :root {
+            --navy: #0D1B2A;
             --dark-blue: #1B263B;
+            --cyan: #00E5FF;
+            --gold: #B89E6B;
+            --white: #FFFFFF;
+            --slate: #778899;
         }
-        body { 
-            background-color: var(--navy); 
-            color: var(--white); 
-            font-family: 'Inter', 'Segoe UI', sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            line-height: 1.6; 
+
+        body {
+            background-color: var(--navy);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
-        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
-        .hero-image { 
-            width: 100%; 
-            max-width: 300px; 
-            display: block; 
-            margin: 0 auto 30px; 
-            filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.3));
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: radial-gradient(circle at center, #1B263B 0%, #0D1B2A 100%);
+            border-bottom: 1px solid rgba(0, 229, 255, 0.2);
         }
-        header { text-align: center; padding-bottom: 40px; }
-        header h1 { 
-            color: var(--cyan); 
-            letter-spacing: 6px; 
-            margin: 0; 
-            font-size: 3rem; 
-            text-transform: uppercase; 
+
+        .hero-logo {
+            width: 200px;
+            height: auto;
+            filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.3));
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 3rem;
             font-weight: 800;
+            letter-spacing: -1px;
+            margin: 0;
+            text-transform: uppercase;
         }
-        header p { 
-            color: var(--gold); 
-            text-transform: uppercase; 
-            font-size: 1.1rem; 
-            margin-top: 10px; 
+
+        .tagline {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--cyan);
+            font-size: 1rem;
+            margin-top: 10px;
             letter-spacing: 2px;
         }
-        .profile-grid { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 30px; 
-            margin: 40px 0; 
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
         }
-        .card { 
-            background: var(--dark-blue); 
-            border: 1px solid rgba(0, 229, 255, 0.3); 
-            border-radius: 20px; 
-            padding: 35px; 
+
+        h2 {
+            font-size: 2rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--cyan);
+            padding-left: 20px;
+        }
+
+        /* Team Profiles */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .profile-card {
+            background: var(--dark-blue);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 40px;
             text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .card:hover { transform: translateY(-5px); border-color: var(--cyan); }
-        .profile-img { 
-            width: 180px; 
-            height: 180px; 
-            border-radius: 50%; 
-            border: 3px solid var(--cyan); 
-            margin: 0 auto 20px; 
-            object-fit: cover; 
-            display: block; 
-        }
-        .cta-box { 
-            background: linear-gradient(145deg, rgba(27, 38, 59, 0.8), rgba(13, 27, 42, 0.8));
-            border: 1px solid var(--gold); 
-            border-radius: 20px; 
-            padding: 50px; 
-            text-align: center; 
-            margin-top: 40px;
-        }
-        .btn { 
-            background-color: var(--cyan); 
-            color: var(--navy); 
-            padding: 20px 45px; 
-            border-radius: 50px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            display: inline-block; 
-            margin: 20px 0; 
-            text-transform: uppercase; 
-            letter-spacing: 1px;
             transition: all 0.3s ease;
         }
-        .btn:hover { background-color: #00b8cc; transform: scale(1.05); }
-        .portal-link { color: var(--gold); text-decoration: none; font-weight: 600; display: block; margin-top: 10px; }
-        .portal-link:hover { color: var(--cyan); }
-        @media (max-width: 768px) { 
-            .profile-grid { grid-template-columns: 1fr; }
-            header h1 { font-size: 2.2rem; }
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <img src="shield.png" alt="Aegis Ops Shield" class="hero-image">
-    
-    <header>
-        <h1>AEGIS OPS</h1>
-        <p>AI Strategy & Content Operations</p>
-    </header>
 
-    <div class="profile-grid">
-        <div class="card">
-            <img src="1773946228088.png" alt="Laron" class="profile-img">
-            <h3 style="color: var(--cyan); margin-bottom: 10px;">Laron</h3>
-            <p>"Building AI engines that scale your brand's operational efficiency."</p>
-        </div>
-        <div class="card">
-            <img src="brittney-profile.png" alt="Brittney" class="profile-img">
-            <h3 style="color: var(--cyan); margin-bottom: 10px;">Brittney</h3>
-            <p>"Strategic oversight ensuring your AI-driven content remains authentically human."</p>
-        </div>
-    </div>
+        .profile-card:hover {
+            border-color: var(--cyan);
 
-    <div class="cta-box">
-        <h2 style="color: var(--gold); margin-bottom: 10px;">Ready to Scale?</h2>
-        <p>Join the next generation of AI-powered operations.</p>
-        <a href="https://form.typeform.com/to/gV8PkLGT" class="btn">Start Your Application</a>
-        <a href="https://hickory-crayfish-3df.notion.site/Aegis-Ops-Your-30-Day-Growth-Roadmap-327e6c4fa2da80b5a197cce437b74372" target="_blank" class="portal-link">View 30-Day Client Portal →</a>
-    </div>
-</div>
-</body>
-</html>
