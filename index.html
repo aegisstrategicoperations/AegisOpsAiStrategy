@@ -5,165 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aegis Ops | AI Content Strategy</title>
     <style>
-        :root {
-            --navy: #0D1B2A;
-            --cyan: #00E5FF;
-            --gold: #B89E6B;
-            --white: #FFFFFF;
-        }
-        body {
-            background-color: var(--navy);
-            color: var(--white);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        
-        /* Hero Branding Section */
-        .hero-section {
-            text-align: center;
-            padding: 40px 20px;
-        }
-        .hero-image {
-            width: 100%;
-            max-width: 800px;
-            border-radius: 15px;
-            border: 2px solid var(--gold);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
-        }
-        header h1 {
-            color: var(--cyan); 
-            letter-spacing: 4px; 
-            margin: 10px 0 0;
-            font-size: 2.5rem;
-            text-transform: uppercase;
-        }
-        header p {
-            color: var(--gold); 
-            text-transform: uppercase; 
-            font-size: 0.9rem;
-            margin-bottom: 30px;
-        }
-
-        /* Profile Section Grid */
-        .profile-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        .card {
-            background: rgba(0, 229, 255, 0.05);
-            border: 1px solid var(--cyan);
-            border-radius: 15px;
-            padding: 25px;
-            text-align: center;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid var(--cyan);
-            margin: 0 auto 15px;
-            display: block;
-            object-fit: cover;
-            object-position: top;
-        }
-
-        /* CTA Section */
-        .cta-box {
-            background: rgba(184, 158, 107, 0.05); 
-            border: 1px solid var(--gold);
-            border-radius: 15px;
-            padding: 40px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .btn {
-            background-color: var(--cyan);
-            color: var(--navy);
-            padding: 18px 35px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            margin: 15px 0;
-            text-transform: uppercase;
-            box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
-            transition: 0.3s ease;
-        }
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 229, 255, 0.5);
-        }
-
-        footer {
-            text-align: center; 
-            font-size: 0.85rem; 
-            color: #778899; 
-            padding: 40px 0;
-        }
-
-        /* Mobile Optimization */
-        @media (max-width: 650px) {
-            .profile-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        :root { --navy: #0D1B2A; --cyan: #00E5FF; --gold: #B89E6B; --white: #FFFFFF; }
+        body { background-color: var(--navy); color: var(--white); font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .hero-image { width: 100%; max-width: 800px; border-radius: 15px; border: 2px solid var(--gold); display: block; margin: 20px auto; }
+        header { text-align: center; padding: 20px 0; }
+        header h1 { color: var(--cyan); letter-spacing: 4px; margin: 0; font-size: 2.5rem; text-transform: uppercase; }
+        header p { color: var(--gold); text-transform: uppercase; font-size: 0.9rem; margin-top: 5px; }
+        .profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; }
+        .card { background: rgba(0, 229, 255, 0.05); border: 1px solid var(--cyan); border-radius: 15px; padding: 25px; text-align: center; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--cyan); margin: 0 auto 15px; object-fit: cover; display: block; }
+        .cta-box { background: rgba(184, 158, 107, 0.05); border: 1px solid var(--gold); border-radius: 15px; padding: 40px; text-align: center; }
+        .btn { background-color: var(--cyan); color: var(--navy); padding: 18px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin: 15px 0; text-transform: uppercase; }
+        @media (max-width: 650px) { .profile-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-
 <div class="container">
-    <div class="hero-section">
-        <img src="907.png" alt="Aegis Ops Strategy Shield" class="hero-image">
-        <header>
-            <h1>AEGIS OPS</h1>
-            <p>AI Strategy & Content Operations</p>
-        </header>
-    </div>
+    <img src="shield.png" alt="Aegis Ops Shield" class="hero-image">
+    
+    <header>
+        <h1>AEGIS OPS</h1>
+        <p>AI Strategy & Content Operations</p>
+    </header>
 
     <div class="profile-grid">
         <div class="card">
-            <img src="987.png" alt="Laron - Founder" class="profile-img">
-            <h3 style="color: var(--cyan); margin-bottom: 10px;">Laron</h3>
-            <p style="font-size: 0.95rem; font-style: italic; color: #E0E0E0;">
-                "I leverage Project Management precision to build AI engines that scale your brand."
-            </p>
+            <img src="987.png" alt="Laron" class="profile-img">
+            <h3 style="color: var(--cyan);">Laron</h3>
+            <p>"I build AI engines that scale your brand."</p>
         </div>
-
         <div class="card">
-            <img src="1773747042261.png" alt="Brittney - Strategy" class="profile-img">
-            <h3 style="color: var(--cyan); margin-bottom: 10px;">Brittney</h3>
-            <p style="font-size: 0.95rem; font-style: italic; color: #E0E0E0;">
-                "Designing high-level strategy that ensures your AI content sounds human and converts."
-            </p>
+            <img src="1773747042261.png" alt="Brittney" class="profile-img">
+            <h3 style="color: var(--cyan);">Brittney</h3>
+            <p>"Strategy that ensures your AI content sounds human."</p>
         </div>
     </div>
 
     <div class="cta-box">
-        <h2 style="color: var(--gold); margin-top: 0;">Ready to Scale?</h2>
-        <p>Apply for a custom AI Content Pipeline designed for your business.</p>
-        
+        <h2 style="color: var(--gold);">Ready to Scale?</h2>
         <a href="https://form.typeform.com/to/gV8PkLGT" class="btn">Start Your Application</a>
-
-        <p>
-            <a href="https://hickory-crayfish-3df.notion.site/Aegis-Ops-Your-30-Day-Growth-Roadmap-327e6c4fa2da80b5a197cce437b74372" target="_blank" style="color: var(--cyan); text-decoration: underline; font-weight: bold;">View 30-Day Client Portal</a>
-        </p>
+        <p><a href="https://hickory-crayfish-3df.notion.site/Aegis-Ops-Your-30-Day-Growth-Roadmap-327e6c4fa2da80b5a197cce437b74372" target="_blank" style="color: var(--cyan); font-weight: bold;">View 30-Day Client Portal</a></p>
     </div>
-
-    <footer>
-        <p>Aegis Ops & AI Strategy<br>
-        Powered by AI. Verified by Humans.</p>
-    </footer>
 </div>
-
 </body>
 </html>
