@@ -194,4 +194,285 @@
         .pricing-card h3 {
             font-size: 1.5rem;
             color: var(--gold);
-            margin: 0<span class="ml-2" /><span class="inline-block w-3 h-3 rounded-full bg-neutral-a12 align-middle mb-[0.1rem]" />
+            margin: 0;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--cyan);
+            margin: 10px 0;
+        }
+        .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--slate);
+        }
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            flex-grow: 1;
+            color: var(--slate);
+        }
+        .features-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .features-list li::before {
+            content: '✓';
+            color: var(--cyan);
+            margin-right: 10px;
+        }
+        .pricing-card .btn {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        /* --- NEW: Additional Services Section --- */
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-item {
+            background: var(--dark-blue);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .service-item h3 {
+            margin-top: 0;
+            color: var(--cyan);
+        }
+        .service-item p {
+            color: var(--slate);
+            margin-bottom: 0;
+        }
+        
+        /* --- NEW: Case Study Section --- */
+        .case-study-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        .case-study-card {
+            background: var(--dark-blue);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .case-study-card h3 {
+            color: var(--gold);
+            margin-top: 0;
+        }
+        .case-study-card h4 {
+            color: var(--cyan);
+            margin-bottom: 5px;
+        }
+        .case-study-card p, .case-study-card ul {
+            color: var(--slate);
+        }
+        .measurable-result {
+            background: rgba(0, 229, 255, 0.1);
+            border-left: 3px solid var(--cyan);
+            padding: 15px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .measurable-result strong {
+            color: var(--white);
+            font-style: normal;
+        }
+
+        /* --- CTA & Footer --- */
+        .cta-section {
+            text-align: center;
+            padding: 100px 20px;
+            background: var(--dark-blue);
+        }
+        .btn {
+            background: var(--cyan);
+            color: var(--navy);
+            padding: 20px 40px;
+            text-decoration: none;
+            font-weight: 900;
+            border-radius: 4px;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            box-shadow: 0 0 20px var(--cyan);
+            background: var(--white);
+            transform: translateY(-3px);
+        }
+        .email-contact {
+            display: block;
+            margin-top: 30px;
+            color: var(--gold);
+            font-family: 'JetBrains Mono', monospace;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.75rem;
+            color: var(--slate);
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="shield.png" alt="Aegis Shield" class="hero-logo">
+        <h1>AI Operations That Scale Your Brand</h1>
+        <p class="hero-subtitle">Aegis Ops & AI Strategy</p>
+        <div class="status-terminal">HQ: WHARTON, TX // OPS: 100% REMOTE // REACH: GLOBAL</div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>Our Mission & Vision</h2>
+            <p class="section-intro">
+                Founded by a DeVry University Business & AI student and her partner, Aegis Ops & AI Strategy is built on a shared passion for innovation. Our vision is to be the premier partner for AI-driven social media growth, fostering meaningful connections through personalized strategies that ensure seamless digital operations.
+            </p>
+            <p style="text-align: center;">
+                <strong>Our Mission:</strong> To empower the next generation of entrepreneurs through smart social media strategies and AI-driven growth. We blend business management with creative design to help our community thrive.
+            </p>
+        </section>
+
+        <section id="values" class="container" style="padding-top: 0;">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card"><h3><span>V</span> – Visionary Innovation</h3><p>Integrating AI and modern design to future-proof your brand.</p></div>
+                <div class="value-card"><h3><span>I</span> – Integrity</h3><p>Committed to ethical business practices and total financial transparency.</p></div>
+                <div class="value-card"><h3><span>T</span> – Tailored Precision</h3><p>Applying rigorous project management to every detail of your strategy.</p></div>
+                <div class="value-card"><h3><span>A</span> – Artistic Flair</h3><p>Fusing high-level graphic design with strategic brand storytelling.</p></div>
+                <div class="value-card"><h3><span>L</span> – Local Impact</h3><p>Empowering our community’s entrepreneurs through sustainable growth.</p></div>
+            </div>
+        </section>
+
+        <section id="leadership" class="container">
+            <h2>Executive Leadership</h2>
+            <div class="team-grid">
+                <div class="profile-card">
+                    <img src="brittney-profile.png" alt="Brittney Flores" class="profile-img">
+                    <h3>Brittney Flores</h3>
+                    <span class="title-tag">Strategy & AI Operations</span>
+                    <p>“I specialize in professionalizing digital operations for growing businesses. I combine Project Management (PMI standards) with AI-driven workflows to deliver high-quality social media management without the overhead of a traditional agency.”</p>
+                </div>
+                <div class="profile-card">
+                    <img src="laron-profile.jpg" alt="Laron" class="profile-img">
+                    <h3>Laron</h3>
+                    <span class="title-tag">Logistics & Financial Compliance</span>
+                    <p>San Diego State Accounting professional and HR Generalist. Operates the back-office with a focus on logistics, financial integrity, and certified operational excellence.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="founders-offer" class="container">
+            <div class="beta-alert">
+                <strong>FOUNDER'S PRICING PHASE:</strong> We are scaling our portfolio and seeking 5 "Anchor Clients." In exchange for a testimonial, secure enterprise-grade management at our initial introductory rates.
+                <span class="slots-count">[ AVAILABLE SLOTS: 3 / 5 ]</span>
+            </div>
+        </section>
+        
+        <section id="portfolio" class="container">
+            <h2>Our Work In Action</h2>
+            <div class="case-study-grid">
+                <div class="case-study-card">
+                    <h3>Project 1: Aegis Op Visual Identity & Brand Authority</h3>
+                    <h4>The Challenge</h4>
+                    <p>To establish a high-tier visual identity for a firm merging elite operational security with AI strategy, shifting brand perception from a traditional agency to a visionary, tech-driven partner.</p>
+                    <h4>Our Solution</h4>
+                    <p>We developed a "Human-in-the-Loop" brand concept, centering a human expert within a holographic command interface. A central "Aegis" shield with embedded circuitry visualizes data protection, while a premium Navy, Cyan, and Gold palette communicates executive authority.</p>
+                    <div class="measurable-result">
+                        <strong>Result:</strong> Successfully established a premium, high-tech brand identity that communicates global oversight and strategic sophistication.
+                    </div>
+                </div>
+                <div class="case-study-card">
+                    <h3>Project 2: The AI-Integrated Content Engine</h3>
+                    <h4>The Challenge</h4>
+                    <p>The content creation process involved a significant "manual research bottleneck," with hours spent on research, drafting, and optimization for each client, limiting scalability.</p>
+                    <h4>Our Solution</h4>
+                    <p>We designed and implemented an automated intake and creation system. A deep-dive Typeform consultation captures client variables (tone, keywords) and pipes the data via a Zapier/Make workflow directly into an AI engine, generating optimized drafts, social kits, and visual briefs instantly.</p>
+                    <div class="measurable-result">
+                        <strong>Result:</strong> Reduced end-to-end content creation time by <strong>70%</strong>, cutting a 6.5-hour manual process down to under 2 hours of human review and approval.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="container">
+            <h2>Service Matrix</h2>
+            <!-- STRATEGIC ADDITION 1: NOTION LINK -->
+            <p class="section-intro">
+                See exactly how we deliver results. <a href="https://hickory-crayfish-3df.notion.site/Aegis-Ops-Your-30-Day-Growth-Roadmap-327e6c4fa2da80b5a197cce437b74372?source=copy_link" target="_blank" rel="noopener noreferrer" style="color: var(--cyan); text-decoration: underline;">Explore our 30-Day Growth Roadmap</a> for a transparent look at our process.
+            </p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">\\$250 <span>/ month</span></div>
+                    <ul class="features-list">
+                        <li>Social Media Account Setup</li>
+                        <li>2 Posts per Week</li>
+                        <li>Basic Community Engagement</li>
+                        <li>Establishes a consistent, professional brand voice.</li>
+                    </ul>
+                </div>
+                <div class="pricing-card highlight">
+                    <h3>Growth</h3>
+                    <div class="price">\\$500 <span>/ month</span></div>
+                    <ul class="features-list">
+                        <li>Includes Everything in Starter</li>
+                        <li>4 Posts per Week</li>
+                        <li>AI-Driven Content Strategy</li>
+                        <li>Professional Graphic Design</li>
+                        <li>Captures your target audience and increases engagement.</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Pro</h3>
+                    <div class="price">\\$1,000 <span>/ month</span></div>
+                    <ul class="features-list">
+                        <li>Includes Everything in Growth</li>
+                        <li>Advanced Analytics & Reporting</li>
+                        <li>Monthly Content Calendar</li>
+                        <li>Priority Support</li>
+                        <li>A comprehensive, hands-off solution for maximum growth.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="additional-services" class="container" style="padding-top:0;">
+             <h2>Additional Services</h2>
+             <div class="service-list">
+                 <div class="service-item"><h3>AI Audit & Strategy</h3><p>We analyze your current operations and deliver a custom report showing how AI can save you time and money.</p></div>
+                 <div class="service-item"><h3>Social Media Graphics</h3><p>You receive 10-15 reusable, professionally designed templates tailored to your brand identity.</p></div>
+                 <div class="service-item"><h3>Account SEO & Clean-up</h3><p>A one-time service to optimize your bios, links, and keywords for maximum visibility.</p></div>
+                 <div class="service-item"><h3>Competitor Analysis</h3><p>We deliver an analytical report on your competitors' digital strategies, spending, and performance.</p></div>
+                 <div class="service-item"><h3>Automated Chatbot Setup</h3><p>We use simple AI tools to set up automated "Auto-Replies" for your DMs, ensuring instant customer engagement.</p></div>
+                 <div class="service-item"><h3>Custom Scalable Packages</h3><p>Need something different? Let's chat about your unique needs and budget to create a tailored package.</p></div>
+             </div>
+        </section>
+    </main>
+
+    <!-- STRATEGIC ADDITION 2: CALENDLY LINK -->
+    <section class="cta-section">
+        <h2>Ready to Professionalize Your Digital Footprint?</h2>
+        <p>Secure your spot and let's build your AI-powered growth engine.</p>
+        <a href="https://calendly.com/aegisopaistrategy" target="_blank" rel="noopener noreferrer" class="btn">Book Your Free Strategy Call</a>
+        <p style="margin-top: 25px; color: var(--slate);">Or, if you prefer, <a href="https://form.typeform.com/to/gV8PkLGT" target="_blank" rel="noopener noreferrer" style="color: var(--cyan);">start your application here</a>.</p>
+        <a href="mailto:contact@aegisops.ai" class="email-contact">contact@aegisops.ai</a>
+    </section>
+
+    <footer>
+        © 2024 AEGIS OPS & AI STRATEGY | WHARTON, TEXAS<br>
+        SYSTEMS ARCHITECTED FOR THE REMOTE ECONOMY
+    </footer>
+
+</body>
+</html>
